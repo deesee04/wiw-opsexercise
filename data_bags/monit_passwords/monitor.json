@@ -1,8 +1,8 @@
 {
   "id": "monitor",
   "password": {
-    "encrypted_data": "XLnlQBzv8eA5Cp1Yh4ktI10WeSIOsHgg0VmPbeDoXANb04Tz2j7m5Cd6u+az\nnjXGtxpMyht8C+9Wat7lHyRfYA==\n",
-    "iv": "3eSsF2hgXysueV25fRbOAw==\n",
+    "encrypted_data": "u11VWKhqdOB7fnegXqAXlafOu3/uT6NbEZnm/V96UuMKyYHiEY5fNt8GSDCU\n9C4T\n",
+    "iv": "8jb7QSkXriiIZxEmBLLDcA==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
