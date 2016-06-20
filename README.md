@@ -1,6 +1,5 @@
 # // WIW - Ops Exercise
-## // Author: Dustin Camilleri
-## // Date: 2016-06-20
+## // Author: Dustin Camilleri // Date: 2016-06-20
 
 
 ### // Overview
@@ -8,7 +7,9 @@
 This project contains three cookbooks:
 
 base - configures a base node with extra security precautions.
+
 webserver - configures a basic Nginx-based, HHVM-backed webserver.
+
 blog - configures a Wordpress installation backed by a local MySQL database.
 
 Tested with Vagrant, Chef-Zero and Chef Server. 
@@ -17,7 +18,7 @@ Tested with Vagrant, Chef-Zero and Chef Server.
 
 #### Testing: 
 
-Tests performed with serverspec via Test Kitchen. Tests may be run with the 'kitchen test' command in the root or individual cookbook directory. 
+Tests performed with serverspec via Test Kitchen. Tests may be run with the `kitchen test` command in the root or individual cookbook directory. 
 
 #### Vagrant:
 
