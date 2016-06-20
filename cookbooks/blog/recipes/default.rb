@@ -2,7 +2,7 @@
 # Cookbook Name:: blog
 # Recipe:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright (c) 2016 dc, All Rights Reserved.
 
 # Include the webserver recipe.
 

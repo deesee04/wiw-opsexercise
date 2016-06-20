@@ -2,7 +2,7 @@
 # Cookbook Name:: blog
 # Recipe:: wp
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright (c) 2016 dc, All Rights Reserved.
 
 # Create random passwords for wp-config.php
 
