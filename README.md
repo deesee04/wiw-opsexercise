@@ -30,7 +30,7 @@ To bootstrap and cook a node, run:
 
 `knife bootstrap NODE_ADDRESS -N NODE_NAME --ssh-user ubuntu --sudo --bootstrap-version 12.10.24 --identity-file SSH_IDENTITY_FILE --secret-file /PATH/TO/.secrets/encrypted_data_bag_secret --run-list "recipe[base], recipe[webserver], recipe[blog]"`
 
-Once the run has completed, Wordpress installation will be available at: http://NODE_ADDRESS:8080/
+Once the run has completed, Wordpress installation will be available at: http://NODE_ADDRESS/
 
 
 
