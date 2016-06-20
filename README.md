@@ -1,28 +1,37 @@
-Overview
-========
+// WIW - Ops Exercise
+// Author: Dustin Camilleri
+// Date: 2016-06-20
 
-Every Chef installation needs a Chef Repository. This is the place where cookbooks, roles, config files and other artifacts for managing systems with Chef will live. We strongly recommend storing this repository in a version control system such as Git and treat it like source code.
 
-While we prefer Git, and make this repository available via GitHub, you are welcome to download a tar or zip archive and use your favorite version control system to manage the code.
+// Overview
 
-Repository Directories
-======================
+This project contains three cookbooks:
 
-This repository contains several directories, and each directory contains a README file that describes what it is for in greater detail, and how to use it for managing your systems with Chef.
+base - configures a base node with extra security precautions.
+webserver - configures a basic Nginx-based, HHVM-backed webserver.
+blog - configures a Wordpress installation backed by a local MySQL database.
 
-* `cookbooks/` - Cookbooks you download or create.
-* `data_bags/` - Store data bags and items in .json in the repository.
-* `roles/` - Store roles in .rb or .json in the repository.
-* `environments/` - Store environments in .rb or .json in the repository.
+Tested with Vagrant, Chef-Zero and Chef Server. 
 
-Configuration
-=============
+// Usage
 
-The config file, `.chef/knife.rb` is a repository specific configuration file for knife. If you're using the Chef Platform, you can download one for your organization from the management console. If you're using the Open Source Chef Server, you can generate a new one with `knife configure`. For more information about configuring Knife, see the Knife documentation.
+Testing: 
 
-https://docs.chef.io/knife.html
+Tests performed with serverspec via Test Kitchen. Tests may be run with the 'kitchen test' command in the root or individual cookbook directory. 
 
-Next Steps
-==========
+Vagrant:
 
-Read the README file in each of the subdirectories for more information about what goes in those directories.
+To start, run 'vagrant up'. Once the run is complete, Wordpress installation will be available at: http://localhost:8080/
+
+Chef Server:
+
+To bootstrap and cook a node, run:
+
+knife bootstrap NODE_ADDRESS -N NODE_NAME --ssh-user ubuntu --sudo --bootstrap-version 12.10.24 --identity-file SSH_IDENTITY_FILE --secret-file /PATH/TO/.secrets/encrypted_data_bag_secret --run-list "recipe[base], recipe[webserver], recipe[blog]"
+
+Once the run has completed, Wordpress installation will be available at: http://NODE_ADDRESS:8080/
+
+
+
+
+
