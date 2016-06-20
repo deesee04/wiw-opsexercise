@@ -1,0 +1,9 @@
+{
+  "id": "monitor",
+  "password": {
+    "encrypted_data": "XLnlQBzv8eA5Cp1Yh4ktI10WeSIOsHgg0VmPbeDoXANb04Tz2j7m5Cd6u+az\nnjXGtxpMyht8C+9Wat7lHyRfYA==\n",
+    "iv": "3eSsF2hgXysueV25fRbOAw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

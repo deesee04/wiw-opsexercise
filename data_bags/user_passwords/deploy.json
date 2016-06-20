@@ -1,0 +1,9 @@
+{
+  "id": "deploy",
+  "password": {
+    "encrypted_data": "DKdXY7ogpQ+VoGaQT+EWNQmKdRZPfIUrfUuo7vUh3vcbRv9qLgKGf4ktmKiE\n5Mtm3fT4ncfz3j5uw9WyklYFhg==\n",
+    "iv": "FPiAXS1qPQ76L/JKxjgCHw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

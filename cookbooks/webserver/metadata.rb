@@ -1,0 +1,10 @@
+name 'webserver'
+maintainer 'dc'
+maintainer_email 'dc@dustincamilleri.com'
+license 'all_rights'
+description 'Installs/Configures nginx'
+long_description 'Installs/Configures nginx'
+version '0.0.1'
+
+depends 'nginx', '~> 2.7.6'
+depends 'nginx-hardening'

@@ -1,0 +1,12 @@
+name 'base'
+maintainer 'dc'
+maintainer_email 'dc@dustincamilleri.com'
+license 'all_rights'
+description 'Installs/Configures base'
+long_description 'Installs/Configures base'
+version '0.0.1'
+
+depends 'apt'
+depends 'os-hardening'
+depends 'ssh-hardening'
+depends 'poise-monit'

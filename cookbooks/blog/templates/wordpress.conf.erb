@@ -1,0 +1,16 @@
+server {
+        listen 80;
+        server_name localhost vagrant-ubuntu-trusty-64;
+
+        access_log   /var/log/nginx/localhost.access.log;
+        error_log    /var/log/nginx/localhost.error.log;
+
+        root /var/www/wordpress;
+        index index.php;
+
+        location / {
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+	include hhvm.conf;
+}
